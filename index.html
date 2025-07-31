@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>โปสการ์ดความทรงจำ</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      font-family: 'Prompt', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .postcard {
+      position: relative;
+      width: 900px;
+      height: 680px;
+      background-color: #fffaf5;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .photo {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* รูปหลัก 5 รูป */
+    .top {
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .bottom {
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .left {
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+    }
+
+    .right {
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+
+    .top-right {
+      top: 20px;
+      right: 20px;
+    }
+
+    /* รูปที่เพิ่มใหม่ */
+    .top-left {
+      top: 20px;
+      left: 20px;
+    }
+
+    .bottom-left {
+      bottom: 20px;
+      left: 20px;
+    }
+
+    .bottom-right {
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width: 400px;
+      font-size: 20px;
+      color: #5b3e2b;
+      line-height: 1.6;
+      padding: 20px;
+      background-color: rgba(255, 248, 240, 0.85);
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="postcard">
+    <!-- รูปภาพ -->
+    <img src="image/2.jpg" class="photo top">
+    <img src="image/3.jpg" class="photo bottom">
+    <img src="image/4.jpg" class="photo left">
+    <img src="image/5.jpg" class="photo right">
+    <img src="image/6.jpg" class="photo top-right"> <!-- ย้ายมุมขวาบน -->
+
+    <!-- รูปที่เพิ่มใหม่ -->
+    <img src="image/1.jpg" class="photo top-left">
+    <img src="image/7.jpg" class="photo bottom-left">
+    <img src="image/8.jpg" class="photo bottom-right">
+
+    <!-- ข้อความ -->
+    <div class="message">
+      Happy National Girlfriend Day!💐🩵 <br>
+      ถึงเราจะยังไม่ใช่แฟนกันก็เถอะ(ในส่วนนี้ต้องโทษด้วยถ้าอาจจะทำให้ต้ารู้สึกอึกอัดหรือไม่ชอบ)แต่รูปภาพที่เห็น...มันคือฝันเล็กๆที่พี่หวังว่าสักวัน <br>
+      เราจะได้ทำมันด้วยกัน...มันคงจะน่ารักมากๆเลยเนอะ😁
+    </div>
+  </div>
+
+</body>
+</html>
